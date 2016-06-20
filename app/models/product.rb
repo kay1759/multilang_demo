@@ -1,4 +1,8 @@
+require 'wzs/model/multilang'
+
 class Product < ActiveRecord::Base
+
+  include ::Wzs::Model::Multilang
 
   belongs_to	:category
   belongs_to	:maker
@@ -11,10 +15,10 @@ class Product < ActiveRecord::Base
     product_descriptions.find_by(:language_id => lang_id)
   end
 
-  [:name, :meaning, :description, :color, :material].each do |func|
-    define_method func do |lang_id|
-      (desc = desc_model(lang_id)) ? desc.__send__(func) : ""
-    end
-  end
+  attr_by_lang :name
+  attr_by_lang :meaning
+  attr_by_lang :description
+  attr_by_lang :color
+  attr_by_lang :material
  
 end

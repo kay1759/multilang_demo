@@ -1,4 +1,8 @@
+require 'wzs/model/multilang'
+
 class Maker < ActiveRecord::Base
+
+  include ::Wzs::Model::Multilang
 
   has_many	:products
   has_many	:maker_descriptions
@@ -10,10 +14,6 @@ class Maker < ActiveRecord::Base
     maker_descriptions.find_by(:language_id => lang_id)
   end
 
-  [:name].each do |func|
-    define_method func do |lang_id|
-      (desc = desc_model(lang_id)) ? desc.__send__(func) : ""
-    end
-  end
+  attr_by_lang :name
 
 end

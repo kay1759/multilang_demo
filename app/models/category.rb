@@ -1,4 +1,8 @@
+require 'wzs/model/multilang'
+
 class Category < ActiveRecord::Base
+
+  include ::Wzs::Model::Multilang
 
   has_many	:products
   has_many	:category_descriptions
@@ -10,10 +14,7 @@ class Category < ActiveRecord::Base
     category_descriptions.find_by(:language_id => lang_id)
   end
 
-  [:name, :description].each do |func|
-    define_method func do |lang_id|
-      (desc = desc_model(lang_id)) ? desc.__send__(func) : ""
-    end
-  end
+  attr_by_lang :name
+  attr_by_lang :description
 
 end
