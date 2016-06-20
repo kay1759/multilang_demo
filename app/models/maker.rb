@@ -10,8 +10,10 @@ class Maker < ActiveRecord::Base
     maker_descriptions.find_by(:language_id => lang_id)
   end
 
-  def name(lang_id)
-    (desc = desc_model(lang_id)) ? desc.name : ""
+  [:name].each do |func|
+    define_method func do |lang_id|
+      (desc = desc_model(lang_id)) ? desc.__send__(func) : ""
+    end
   end
 
 end

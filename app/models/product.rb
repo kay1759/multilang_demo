@@ -11,24 +11,10 @@ class Product < ActiveRecord::Base
     product_descriptions.find_by(:language_id => lang_id)
   end
 
-  def name(lang_id)
-    (desc = desc_model(lang_id)) ? desc.name : ""
+  [:name, :meaning, :description, :color, :material].each do |func|
+    define_method func do |lang_id|
+      (desc = desc_model(lang_id)) ? desc.__send__(func) : ""
+    end
   end
-  
-  def meaning(lang_id)
-    (desc = desc_model(lang_id)) ? desc.meaning : ""
-  end
-  
-  def description(lang_id)
-    (desc = desc_model(lang_id)) ? desc.description : ""
-  end
-  
-  def color(lang_id)
-    (desc = desc_model(lang_id)) ? desc.color : ""
-  end
-    
-  def material(lang_id)
-    (desc = desc_model(lang_id)) ? desc.material : ""
-  end
-
+ 
 end
