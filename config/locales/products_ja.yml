@@ -1,0 +1,28 @@
+ja:
+  pages:
+    common:
+      header:
+        top: "トップページ"
+        products: "商品"
+        howto: "ご利用方法"
+        aboutus: "会社概要"
+        contactus: "お問い合せ"
+
+      sidebar:
+        search: "検索"
+        categories: "カテゴリー"
+        products: "商品"
+        to_top: "ページトップヘ ↑"
+
+    products:
+      net: "内容量"
+      maker: "製造元"
+      weight: "重量"
+      size: "サイズ"
+      color: "色"
+      material: "材質"
+
+  sitetitle: "Multilingual Rails Application"
+  sitename: "Multilingual Rails Application"
+  copyright: "Copyright © Katsuyoshi Yabe"
+

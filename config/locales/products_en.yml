@@ -1,0 +1,30 @@
+en:
+  pages:
+    common:
+      header:
+        top: "Top"
+        products: "Products"
+        howto: "How to order"
+        aboutus: "About Us"
+        contactus: "Contact Us"
+
+      sidebar:
+        search: "search"
+        categories: "Categories"
+        products: "Products"
+        to_top: "To Top ↑"
+
+    products:
+      net: "NET"
+      maker: "Maker"
+      weight: "Shipping Weight"
+      volume: "Shipping Volume"
+      size: "Size"
+      color: "Color"
+      material: "Material"
+
+  sitetitle: "Multilingual Rails Application"
+  sitename: "Multilingual Rails Application"
+  copyright: "Copyright © Katsuyoshi Yabe"
+
+

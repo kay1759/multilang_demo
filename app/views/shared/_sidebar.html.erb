@@ -1,0 +1,16 @@
+<aside id="sidebar" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+  <%= raw lang_menu %>
+  
+  <div id="search">
+    <form method="get" id="searchform" action="">
+      <input type="text" value=""  style="width:140px;" name="s" id="s" />
+      <button type="button" id="btn_serach_<%= @lang.locale %>" class="btn btn-sm" onclick="submit();"><%= t 'pages.common.sidebar.search' %></button>
+    </form>
+  </div>
+  
+  <h3 class="sidemenu_<%= @lang.locale %>"><%= t 'pages.common.sidebar.categories' %></h3>
+  <%= raw category_menu(@lang, 0, 0) %>
+  
+  <h3 class="sidemenu_<%= @lang.locale %>"><%= t 'pages.common.sidebar.products' %></h3>
+  <%= raw category_product_menu(@lang, @product.category_id) %>
+</aside>

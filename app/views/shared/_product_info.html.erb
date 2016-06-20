@@ -1,0 +1,13 @@
+<div id="product-detail-list">
+  <table class="table">
+    <tbody>
+      <tr><th><%= t 'pages.products.net' %></th><td><%= sprintf("%0.0f", @product.net_amount) %><%= @product.net_unit %></td></tr>
+      <tr><th><%= t 'pages.products.maker' %></th><td><a href="#"><%= @product.maker.name @lang %></a></td></tr>
+      <tr><th><%= t 'pages.products.weight' %></th><td><%= sprintf("%0.0f", @product.weight) %>g</td></tr>
+      <tr><th><%= t 'pages.products.size' %></th><td><%= @product.size %></td></tr>
+      <tr><th><%= t 'pages.products.color' %></th><td><%= @product.color @lang %></td></tr>
+      <tr><th><%= t 'pages.products.material' %></th><td><%= @product.material @lang %></td></tr>
+    </tbody>
+  </table>
+</div>
+ 

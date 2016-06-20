@@ -1,0 +1,11 @@
+<nav id="global-nav_<%= @lang.locale %>" class="navbar navbar-inverse" role="navigation">
+  <div id="global-navigator">
+    <ul class="nav navbar-nav">
+      <li><a href="#"><%= t 'pages.common.header.top' %></a></li>
+      <li><a href="#"><%= t 'pages.common.header.products' %></a></li>
+      <li><a href="#"><%= t 'pages.common.header.howto' %></a></li>
+      <li><a href="#"><%= t 'pages.common.header.aboutus' %></a></li>
+      <li><a href="#"><%= t 'pages.common.header.contactus' %></a></li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,11 @@
+<div id="breadcrumb">
+  <ul class="breadcrumb">
+    <% if @lang.locale == I18n.default_locale.to_s %>
+      <li><a href="/"><%= t 'pages.common.header.top' %></a></li>
+    <% else %>
+      <li><a href="/<%= @lang.locale %>/"><%= t 'pages.common.header.top' %></a></li>
+    <% end  %>
+    <li><a href="#" itemprop="url"><%= @product.category.name(@lang) %></a></li>
+    <li><a class="active" href="@"><%= @product.name(@lang) %></a></li>
+  </ul>
+</div>

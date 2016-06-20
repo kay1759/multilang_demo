@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Demo</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Multilingual Rails Application</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag controller.controller_name %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-<%= yield %>
+    <%= render "shared/header" %>
+    <%= render "shared/global_nav" %>
+    
+    <div id="container" class="clearfix">
+      <section id="content" class="col-xs-9 col-sm-9 col-md-9 col-lg-9 clearfix">
+	<%= render "shared/breadcrumb" %>
 
-</body>
+	<article class="clearfix">
+	  <%= yield %>
+	</article>
+      </section>
+      <%= render "shared/sidebar" %>
+    </div>
+
+    <%= render "shared/footer" %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag controller.controller_name %>
+  </body>
 </html>
