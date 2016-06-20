@@ -43,7 +43,6 @@ Programing environment is as below.
     /en/products/koi.html
     /ja/products/koi.html
 
-
 ## Discussion:
 * This system is for demo, just using single controller(products_controller) and signle action(show).
 Bootstrap is already installed in vender/assets/bootstrap.
@@ -53,7 +52,10 @@ I don't use gem, so you don't need to setting up for bootstrap gem like 'rails g
 Because the css content is a topic for this system.
 
 * Image files described in stylesheet is located in 'public/assets/images'.
+Some failure for images in CSS within Rails 4 was reported. 
 
+* Links of 'Global Nav','Breadcrumb' and 'Categories' are dummy.
+Production 'Global Nav' looks like 'app/views/shared/_global_nav_prod.html.erb'
 
 ## Licence:
 
