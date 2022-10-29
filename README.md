@@ -5,6 +5,12 @@
 
 
 ## Environment:
+Latest environment is as below.
+
+* Arch Linux version 5.19.11-arch1-1
+* ruby 3.1.2p20
+* Rails 7.0.4
+
 Programing environment is as below.
 
 * Ubuntu server 16.04 LTS x86_64
@@ -45,11 +51,10 @@ Programing environment is as below.
 
 ## Discussion:
 * This system is for demo, just using single controller(products_controller) and signle action(show).
-Bootstrap is already installed in vender/assets/bootstrap.
-I don't use gem, so you don't need to setting up for bootstrap gem like 'rails generate bootstrap:install'
 
-* 'product.css' is used instead of 'product.scss'.
-Because the css content is a topic for this system.
+* use '--skip-asset-pipeline' option.
+CSS files are under public/assets/css directory. 
+CSS content is not a topic for this system.
 
 * Image files described in stylesheet is located in 'public/assets/images'.
 Some failure for images in CSS within Rails 4 was reported. 
@@ -63,5 +68,6 @@ Production 'Global Nav' looks like 'app/views/shared/_global_nav_prod.html.erb'
 
 ## Author
 
-[kay](https://github.com/kay1759)
+[Katsuyoshi Yabe](https://github.com/kay1759)
+
 

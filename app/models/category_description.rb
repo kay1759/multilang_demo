@@ -1,3 +1,3 @@
-class CategoryDescription < ActiveRecord::Base
+class CategoryDescription < ApplicationRecord
   belongs_to   :category
 end

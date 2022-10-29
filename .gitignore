@@ -19,5 +19,4 @@
 /*.war
 /pids/*.pid
 /vendor/bundle
-/Gemfile.lock
 /TAGS

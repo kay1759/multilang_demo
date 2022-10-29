@@ -1,0 +1,14 @@
+h1#product-title_en, h1#product-title_ja {margin-top:0;padding:6px 0 6px 12px;font-size:2.4em;border-radius: 7px;-moz-border-radius: 7px;-webkit-border-radius: 7px;}
+
+h1#product-title_en {background-color: #195da4;}
+h1#product-title_ja {background-color: #b90101;}
+
+h2#product-meaning_en, h1#product_meaning_ja {font-size:2.0em;font-family:Helvetica, Arial, sans-serif; }
+h2#product-meaning_en {color: #195da4;}
+h2#product-meaning_ja {color: #b90101;}
+
+#product-desc-2 {margin-top:30px;}
+#product-detail-list { padding:10px 10px 0 10px;background-color:#f9f9f9;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+#product-price {margin:50px 0 60px 30px;font-family:Helvetica, Arial, sans-serif; font-size:2.0em; font-weight:bold; color:#333333; letter-spacing:1px; line-height:20px; }
+
+#add-to-cart {margin-left:30px;}

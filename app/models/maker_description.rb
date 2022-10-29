@@ -1,3 +1,3 @@
-class MakerDescription < ActiveRecord::Base
+class MakerDescription < ApplicationRecord
   belongs_to   :maker
 end

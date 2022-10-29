@@ -1,2 +1,3 @@
-class ProductDescription < ActiveRecord::Base
+class ProductDescription < ApplicationRecord
+  belongs_to   :product
 end

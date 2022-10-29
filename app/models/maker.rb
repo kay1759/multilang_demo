@@ -1,6 +1,6 @@
 require 'wzs/model/multilang'
 
-class Maker < ActiveRecord::Base
+class Maker < ApplicationRecord
 
   include ::Wzs::Model::Multilang
 

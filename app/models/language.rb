@@ -1,2 +1,2 @@
-class Language < ActiveRecord::Base
+class Language < ApplicationRecord
 end

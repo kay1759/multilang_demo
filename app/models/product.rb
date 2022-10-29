@@ -1,6 +1,6 @@
 require 'wzs/model/multilang'
 
-class Product < ActiveRecord::Base
+class Product < ApplicationRecord
 
   include ::Wzs::Model::Multilang
 

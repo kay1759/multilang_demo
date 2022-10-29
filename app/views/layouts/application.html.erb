@@ -5,8 +5,9 @@
     <title>Multilingual Rails Application</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <meta name="robots" content="INDEX, FOLLOW" />
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag controller.controller_name %>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/application.css" />
+    <link rel="stylesheet" href="/assets/css/products.css" />
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -26,8 +27,5 @@
     </div>
 
     <%= render "shared/footer" %>
-
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag controller.controller_name %>
   </body>
 </html>
