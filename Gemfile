@@ -4,7 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4"
+gem "rails", "~> 7.0.5.1"
+gem "rack", ">= 2.2.6.4"
+gem "globalid", ">= 1.0.1"
+gem "loofah", ">= 2.19.1"
+gem "rails-html-sanitizer", ">= 1.4.4"
+gem "nokogiri", ">= 1.14.3"
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
