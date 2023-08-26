@@ -5,17 +5,16 @@ ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.7.2"
-gem "rack", ">= 2.2.6.4"
-gem "globalid", ">= 1.0.1"
-gem "loofah", ">= 2.19.1"
-gem "rails-html-sanitizer", ">= 1.4.4"
-gem "nokogiri", ">= 1.14.3"
+gem "rack"
+gem "globalid"
+gem "loofah"
+gem "rails-html-sanitizer"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "sqlite3"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "puma"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"

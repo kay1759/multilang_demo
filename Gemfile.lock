@@ -125,7 +125,7 @@ GEM
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     public_suffix (5.0.3)
-    puma (5.6.7)
+    puma (6.3.1)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -198,16 +198,15 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  globalid (>= 1.0.1)
+  globalid
   jbuilder
-  loofah (>= 2.19.1)
-  nokogiri (>= 1.14.3)
-  puma (~> 5.0)
-  rack (>= 2.2.6.4)
+  loofah
+  puma
+  rack
   rails (~> 7.0.7.2)
-  rails-html-sanitizer (>= 1.4.4)
+  rails-html-sanitizer
   selenium-webdriver
-  sqlite3 (~> 1.4)
+  sqlite3
   tzinfo-data
   web-console
   webdrivers
