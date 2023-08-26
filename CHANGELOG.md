@@ -6,3 +6,7 @@
 
 * compatible with ruby 3.1.2 and Rails 7.0.4
 
+## 0.1.2 - 2023-08-26
+
+* compatible with ruby 3.1.2 and Rails 7.0.7.2
+

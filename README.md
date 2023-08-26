@@ -9,7 +9,7 @@ Latest environment is as below.
 
 * Arch Linux version 5.19.11-arch1-1
 * ruby 3.1.2p20
-* Rails 7.0.5.1
+* Rails 7.0.7.2
 
 Programing environment is as below.
 
